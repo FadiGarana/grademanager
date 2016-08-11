@@ -8,7 +8,11 @@
        }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
        ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');</script> <script src="scripts/vendor.0ea26188.js"></script> <script src="//cdn.ravenjs.com/1.1.19/raven.min.js"></script> <script>Raven.config('https://1e8632b672284ea09d094bcf0670addf@sentry.j42.org/6', {
-    // we highly recommend restricting exceptions to a domain in order to filter out clutter
-    whitelistUrls: ['/amcui.ig.he-arc.ch/', '/localhost/']
-}).install();</script> <script src="scripts/scripts.df3c6745.js"></script> <script>PDFJS.workerSrc = 'scripts/pdf.worker.js';</script> </body> </html>
+       ga('send', 'pageview');</script> <script src="scripts/vendor.0ea26188.js"></script> <script src="//cdn.ravenjs.com/1.1.19/raven.min.js"></script> <script>if (window.hasOwnProperty('Raven')) {
+    Raven.config('https://1e8632b672284ea09d094bcf0670addf@sentry.j42.org/6', {
+        // we highly recommend restricting exceptions to a domain in order to filter out clutter
+        whitelistUrls: ['/amcui.ig.he-arc.ch/', '/localhost/']
+    }).install();
+  } else {
+    Raven = false;
+  }</script> <script src="scripts/scripts.bd7bf03c.js"></script> <script>PDFJS.workerSrc = 'scripts/pdf.worker.js';</script> </body> </html>
